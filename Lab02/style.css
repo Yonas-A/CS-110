@@ -1,0 +1,119 @@
+body {
+    font-family: "Helvetica Neue";
+    background-color: #96a2a9;
+    color: black;
+}
+
+h1 {
+    margin: 16px auto;
+    text-align: center;
+    font-size: 4em;
+}
+
+.whose_turn {
+    margin: 10px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.turn{
+  text-align: center;
+  display: none;
+}
+
+.pvp, .PvsAI
+{
+  display: block;
+  text-align: center;
+  color: black;
+  background-color: #ff8c00;
+  font-size: 18px;
+  border-radius: 8px;
+  width: 10%;
+  margin:10px;
+  margin-left: 45%;
+  margin-right: 45%;
+  
+}
+
+/* Button: NewGame and Reset */
+.new_game,
+.reset {
+    text-align: center;
+    background-color: #ff8c00;
+    color: #000000;
+    font-size: 24px;
+    padding: 12px 28px;
+    border-radius: 12px;
+    border: 1px solid gray;
+    display: block;
+    margin: 20px auto;
+    left: 40px;
+    right: 400px;
+}
+
+.new_game:hover,
+.reset:hover,
+.pvp:hover,
+.PvsAI:hover {
+    background-color: orange;
+}
+.score1,
+.score2 {
+    margin-left: 10px;
+}
+.score--board {
+    width: 120px;
+    height: 20px;
+    display: flex;
+    margin: 10px auto;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1em;
+    margin-left: 10px;
+    background-color: #11cae2;
+    color: #000000;
+}
+
+.game_board {
+    width: 500px;
+    height: 500px;
+    border: 4px solid black;
+    left: 0;
+    right: 0;
+    display: flex;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.one,
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven,
+.eight,
+.nine {
+    flex-grow: 1;
+    width: 100px;
+    background-color: rgb(36, 34, 34);
+    border: 4px solid rgb(0, 0, 0);
+    box-sizing: border-box;
+    position: relative;
+}
+
+.xo {
+    color: rgb(62, 210, 39);
+    font-weight: bold;
+    font-size: 8em;
+    margin: 0 auto;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+}

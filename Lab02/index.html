@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tic Tac Toe Game</title>
+
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body onload="start();">
+        <h1>Tic Tac Toe</h1>
+        <h2 class="turn" id="turn">Its your turn, <span class="display_player"></span>.</h2>
+        <button class="PvsAI" id="PvsAI" onclick="setbot()">AI Bot</button>
+        <button class="pvp" id="pvp" onclick="hide()">Another Player</button>
+
+        <div class="game_board">
+            <div class="row">
+                <div class="one" id="1" onclick="squareClicked(this, 1);">
+                    <span class="xo"></span>
+                </div>
+                <div class="two" id="2" onclick="squareClicked(this, 2);">
+                    <span class="xo"></span>
+                </div>
+                <div class="three" id="3"  onclick="squareClicked(this, 3);">
+                    <span class="xo"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four" id="4" onclick="squareClicked(this, 4);">
+                    <span class="xo"></span>
+                </div>
+                <div class="five" id="5" onclick="squareClicked(this, 5);">
+                    <span class="xo"></span>
+                </div>
+                <div class="six" id="6"  onclick="squareClicked(this, 6);">
+                    <span class="xo"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="seven" id="7"  onclick="squareClicked(this, 7);">
+                    <span class="xo"></span>
+                </div>
+                <div class="eight" id="8" onclick="squareClicked(this, 8);">
+                    <span class="xo"></span>
+                </div>
+                <div class="nine" id="9" onclick="squareClicked(this, 9);">
+                    <span class="xo"></span>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h3 class="score--board">Player X: <a class="score1"></a></h3>
+            <h3 class="score--board">Player O: <a class="score2"></a></h3>
+        </div>
+
+        <button class="new_game" onclick="newGame()">New Game</button>
+        <button class="reset" onclick="reset()">Reset</button>
+
+        <script src="main.js"></script>
+    </body>
+</html>
